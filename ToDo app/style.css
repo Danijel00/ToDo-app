@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #f1f1f1;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1{
+    text-align: center;
+    background: #b92b27;  
+    background: -webkit-linear-gradient(to right, #1565C0, #b92b27); 
+    background: linear-gradient(to right, #1565C0, #b92b27); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 10rem;
+    opacity: 0.5; 
+}
+
+form{
+    max-width: 100%;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.input{
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+    border: none;
+    background: #000046;  
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
+    background: linear-gradient(to right, #1CB5E0, #000046); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.todos{
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+.todos li{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-top: 1px solid #b9b9b9;
+    cursor: pointer;
+}
+.todos li.completed{
+    text-decoration: line-through;
+    color: #b9b9b9;
+}
+
+span{
+    color: #333;
+    margin-top: 2rem;
+    font-weight: 600;
+}
